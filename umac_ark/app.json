@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/main/main",
+    "pages/profile/profile",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "backgroundColor": "#FFFFFE",
+    "borderStyle": "black",
+    "selectedColor": "#D03232",
+    "color": "#131313",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home-hover.png",
+      "text": "Home"
+     }, {
+      "pagePath": "pages/main/main",
+      "iconPath": "image/main.png",
+      "selectedIconPath": "image/main-hover.png",
+      "text": "Main"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "iconPath": "image/profile.png",
+      "selectedIconPath": "image/profile-hover.png",
+      "text": "Profile"
+    }, {
+      "pagePath": "pages/index/index",
+      "text": "ForTesting"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3D4760",
+    "navigationBarTitleText": "夢想之鄉",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

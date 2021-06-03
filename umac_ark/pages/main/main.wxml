@@ -1,0 +1,28 @@
+<view class="nav-bar">
+  <text class="title-font">Select major and year</text>
+  <view class="select-button">
+    <button class="select-ym" bindtap="showSelectWindow">{{selectBtn}}</button>
+    </view>
+  </view>
+
+<view class="original-screen" bindtap="hideSelectWindow" wx:if="{{selectWindowStatus}}"></view>
+
+<view animation="{{animationData}}" class="selectWindow" wx:if="{{selectWindowStatus}}">
+  <view class="column">
+    <text class="select-font">Year</text>
+    <view class="row_year">
+      <text wx:for="{{yearList}}" wx:for-item="item" wx:key="yearList" data-id="{{item}}" class="{{selected_year_id==item?'selected-view':' '}}" bindtap="selectBtn_year">{{item}}</text>
+    </view>
+    <text class="line-divider"></text>
+    <text class="select-font">Major</text>
+    <view class="row_major">
+      <text wx:for="{{majorList}}" wx:for-item="item" wx:key="marjorList" data-id="{{item}}" class="{{selected_major_id==item?'selected-view':' '}}" bindtap="selectBtn_major">{{item}}</text>
+    </view>
+    <text class="line-divider"></text>
+    <view class="decisionBtn">
+      <button class="btn confirm" bindtap="confirmBtn">Confirm</button>
+      <button class="btn cancer" bindtap="cancerBtn">Cancer</button>
+    </view>
+  </view>
+</view>
+
